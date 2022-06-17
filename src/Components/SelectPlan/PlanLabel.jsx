@@ -1,6 +1,6 @@
-export default function PlanLabel({ icon, title, text }) {
+export default function PlanLabel({ icon, title, text, selected }) {
     return (
-        <label className="plan-label active">
+        <label className={`plan-label ${selected}`}>
             <div>
                 <span className="material-icons">{icon}</span>
             </div>

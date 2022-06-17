@@ -10,12 +10,14 @@ export default function SelectPlan() {
                     icon={"person"}
                     title={"Myself"}
                     text={"Write better. Think more clearly. Stay organized."}
+                    selected={"active"}
                 />
 
                 <PlanLabel
                     icon={"groups"}
                     title={"With my team"}
                     text={"Wikis, Docs, Tasks & Projects, all in one workspace."}
+                    selected={""}
                 />
             </div>
         </>
