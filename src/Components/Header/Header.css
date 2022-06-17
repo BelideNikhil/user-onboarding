@@ -1,0 +1,9 @@
+.header-wrapper {
+    margin: 4rem auto 2rem auto;
+}
+
+.header-wrapper .header-subtitle {
+    color: var(--light-gray);
+    margin: 1rem 0;
+    font-weight: 500;
+}

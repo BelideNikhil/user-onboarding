@@ -1,5 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("react-step-progress/dist/index.css");
+@import url("./utils.css");
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
+}
+:root {
+    --primary-color: #5a4ad1;
+    --dark-gray: #40434a;
+    --light-gray: #9ba0ab;
+    --faded-white: #f4f6f9;
+    --border-radius: 4px;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 4rem;
+}
+/* wrapper */
+.wrapper {
+    width: 100%;
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* utils */
+.txt-center {
+    text-align: center;
+}
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    display: block;
+    width: 80%;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--faded-white);
+}
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+/* Step Progress */
+.RSPBprogressBar.RSPBprogressBar {
+    width: 75%;
+    margin: auto;
+    height: 1.5px;
+}
+/* icon */
+.icon {
+    background-color: var(--faded-white);
+    font-size: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon.active {
+    background-color: var(--primary-color);
+    color: var(--faded-white);
+}
+.icon-md {
+    width: 36px;
+    height: 36px;
+}
+.icon-lg {
+    width: 60px;
+    height: 60px;
+}
+
+/*  */
+.plan-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 80%;
+    margin: 1rem auto;
+}
+.plan-label {
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--light-gray);
+    padding: 1.25rem;
+}
+.plan-label > * {
+    margin-bottom: 0.65rem;
+}
+.plan-label input[type="radio"] {
+    display: none;
+}
+.plan-label p {
+    color: var(--light-gray);
+}
+.plan-label.active {
+    border: 1px solid var(--primary-color);
+}
+.plan-label.active .material-icons {
+    color: var(--primary-color);
 }
